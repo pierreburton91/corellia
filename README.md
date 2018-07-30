@@ -21,4 +21,4 @@ Includes :
 * humans.txt
 * favicon.png
 * banners and icon images
-* index.html boilerplate
+* index.pug boilerplate

@@ -18,7 +18,7 @@ gulp.task('css', function() {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('styles/'))
+        .pipe(gulp.dest('wwwroot/styles/'))
         .pipe(browserSync.reload({stream:true}));
 });
 
@@ -26,21 +26,21 @@ gulp.task('js', function() {
     return gulp.src('dev/scripts/*.js')
         .pipe(uglify())
         .pipe(concat('global.min.js'))
-        .pipe(gulp.dest('js/'))
+        .pipe(gulp.dest('wwwroot/js/'))
         .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('img', function () {
     return gulp.src('dev/images/*.{png,jpg,jpeg,gif,svg}')
         .pipe(imageMin())
-        .pipe(gulp.dest('images/'))
+        .pipe(gulp.dest('wwwroot/images/'))
         .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('html', function() {
     return  gulp.src('dev/html/*.pug')
         .pipe(pug())
-        .pipe(gulp.dest(''))
+        .pipe(gulp.dest('wwwroot/'))
         .pipe(browserSync.reload({stream:true}));
 });
 
@@ -53,7 +53,9 @@ gulp.task('watch', function () {
 
 gulp.task('browser-sync', function() {
     browserSync.init({
-        server: true
+        server: {
+            baseDir: "wwwroot"
+        }
     });
 });
 
