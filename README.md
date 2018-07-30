@@ -1,6 +1,14 @@
 # Startup-seed
 
-A startup seed for static website development.
+## A startup seed for static website development.
+
+#### Start your new project :
+```
+git clone https://github.com/pierreburton91/static-seed.git
+git init
+git add
+git commit -m "New project start"
+```
 
 Uses :
 * Gulp
@@ -21,4 +29,6 @@ Includes :
 * humans.txt
 * favicon.png
 * banners and icon images
+* normalize.css
+* Google Analytics snippet
 * index.pug boilerplate
