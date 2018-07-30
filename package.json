@@ -1,0 +1,34 @@
+{
+  "name": "static-seed",
+  "version": "1.0.0",
+  "description": "Startup seed for static website development",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp start",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierreburton91/static-seed.git"
+  },
+  "author": "Pierre Burton",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/pierreburton91/static-seed/issues"
+  },
+  "homepage": "https://github.com/pierreburton91/static-seed#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-stylus": "^2.7.0",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {}
+}

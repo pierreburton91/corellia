@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Pierre Burton -- Designer/Developper -- @pierreburton91
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, Javascript,
+    Node.js, Gulp, Normalize.css
