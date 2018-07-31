@@ -6,9 +6,14 @@
 ```
 git clone https://github.com/pierreburton91/static-seed.git
 git init
-git add
+git remote rm origin
+git add .
 git commit -m "New project start"
+npm i
+npm run start
 ```
+Don't forget to update the package.json file to your needs
+
 
 Uses :
 * Gulp
